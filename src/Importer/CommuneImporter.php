@@ -160,7 +160,9 @@ class CommuneImporter extends ImporterBase implements ImporterInterface {
         $dataCommune[$key] = $data[$value];
       }
 
-      // New Commune entry. Shouldn't happen as all should exists after importing the first CSV.
+      /* New Commune entry. Shouldn't happen as all communes
+       * should have been created after importing the first CSV.
+       */
       if (empty($entity = $this->storage->loadByProperties(['insee' => $dataCommune['insee']]))) {
         $context['message'] = $this->translator->translate('Creating missing commune: @commune', ['@commune' => $dataCommune['name']]);
         BatchImporter::addToResultsByKey('error', $context);
@@ -199,7 +201,6 @@ class CommuneImporter extends ImporterBase implements ImporterInterface {
         BatchImporter::addToResultsByKey('updated', $context);
         return;
       }
-
     }
     catch (\Exception $exception) {
       $this->getLogger('epci')->error($exception->getMessage());
