@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains epci.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function epci_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the epci module.
+    case 'help.page.epci':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Communes epci relation') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function epci_theme() {
+  return [
+    'epci' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,22 @@
+{#
+/**
+ * @file commune.html.twig
+ * Default theme implementation to present Commune data.
+ *
+ * This template is used when viewing Commune pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_commune()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('commune') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

@@ -1,0 +1,16 @@
+epci.import.batch:
+  path: '/admin/epci/import/batch'
+  defaults:
+    _controller: '\Drupal\epci\Controller\ImportController::importBatch'
+    entityTypeName: 'epci'
+    _title: 'Import ECPI Content'
+  requirements:
+    _permission: 'administer epci entities'
+commune.import:
+  path: '/admin/commune/import'
+  defaults:
+    _controller: '\Drupal\epci\Controller\ImportController::importBatch'
+    entityTypeName: 'commune'
+    _title: 'Import ECPI Content'
+  requirements:
+    _permission: 'administer epci entities'

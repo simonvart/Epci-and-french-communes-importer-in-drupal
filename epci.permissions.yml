@@ -1,0 +1,40 @@
+add epci entities:
+  title: 'Create new epci entities'
+
+administer epci entities:
+  title: 'Administer epci entities'
+  description: 'Allow to access the administration form to configure epci entities.'
+  restrict access: true
+
+delete epci entities:
+  title: 'Delete epci entities'
+
+edit epci entities:
+  title: 'Edit epci entities'
+
+view published epci entities:
+  title: 'View published epci entities'
+
+view unpublished epci entities:
+  title: 'View unpublished epci entities'
+
+add commune entities:
+  title: 'Create new Commune entities'
+
+administer commune entities:
+  title: 'Administer Commune entities'
+  description: 'Allow to access the administration form to configure Commune entities.'
+  restrict access: true
+
+delete commune entities:
+  title: 'Delete Commune entities'
+
+edit commune entities:
+  title: 'Edit Commune entities'
+
+view published commune entities:
+  title: 'View published Commune entities'
+
+view unpublished commune entities:
+  title: 'View unpublished Commune entities'
+

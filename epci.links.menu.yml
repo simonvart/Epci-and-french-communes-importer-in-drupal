@@ -1,0 +1,27 @@
+# epci menu items definition
+entity.epci.collection:
+  title: 'epci list'
+  route_name: entity.epci.collection
+  description: 'List epci entities'
+  parent: system.admin_structure
+  weight: 100
+
+epci.admin.structure.settings:
+  title: 'epci settings'
+  description: 'Configure epci entities'
+  route_name: epci.settings
+  parent: entity.epci.collection
+
+# Commune menu items definition
+entity.commune.collection:
+  title: 'Commune list'
+  route_name: entity.commune.collection
+  description: 'List Commune entities'
+  parent: system.admin_structure
+  weight: 100
+
+commune.admin.structure.settings:
+  title: 'Commune settings'
+  description: 'Configure Commune entities'
+  route_name: commune.settings
+  parent: entity.commune.collection

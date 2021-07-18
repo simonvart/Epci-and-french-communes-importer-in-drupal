@@ -1,0 +1,6 @@
+name: 'epci'
+type: module
+description: 'Communes & epci: creating entity and importing'
+core: 8.x
+package: 'Custom'
+core_version_requirement: ^8.0 || ^9.0

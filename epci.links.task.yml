@@ -1,0 +1,42 @@
+# epci routing definition
+epci.settings_tab:
+  route_name: epci.settings
+  title: 'Settings'
+  base_route: epci.settings
+
+entity.epci.canonical:
+  route_name: entity.epci.canonical
+  base_route: entity.epci.canonical
+  title: 'View'
+
+entity.epci.edit_form:
+  route_name: entity.epci.edit_form
+  base_route: entity.epci.canonical
+  title: 'Edit'
+
+entity.epci.delete_form:
+  route_name:  entity.epci.delete_form
+  base_route:  entity.epci.canonical
+  title: Delete
+  weight: 10
+# Commune routing definition
+commune.settings_tab:
+  route_name: commune.settings
+  title: 'Settings'
+  base_route: commune.settings
+
+entity.commune.canonical:
+  route_name: entity.commune.canonical
+  base_route: entity.commune.canonical
+  title: 'View'
+
+entity.commune.edit_form:
+  route_name: entity.commune.edit_form
+  base_route: entity.commune.canonical
+  title: 'Edit'
+
+entity.commune.delete_form:
+  route_name:  entity.commune.delete_form
+  base_route:  entity.commune.canonical
+  title: Delete
+  weight: 10

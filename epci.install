@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\epci\Importer\BatchImporter;
+
+/**
+ * @file
+ * Install, update and uninstall functions for the epci module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+
+function epci_install() {
+  $messager = \Drupal::messenger();
+  $messager->addMessage('Ho, Hi, Mark');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function epci_uninstall() {
+  $messager = \Drupal::messenger();
+  $messager->addMessage('Bye, Mark');
+}

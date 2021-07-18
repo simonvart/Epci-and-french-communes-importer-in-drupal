@@ -1,0 +1,20 @@
+entity.epci.add_form:
+  route_name: entity.epci.add_form
+  title: 'Add epci'
+  appears_on:
+    - entity.epci.collection
+entity.epci.import.batch:
+  route_name: epci.import.batch
+  title: 'Import EPCI' 
+  appears_on:
+    - entity.epci.collection
+entity.commune.add_form:
+  route_name: entity.commune.add_form
+  title: 'Add Commune'
+  appears_on:
+    - entity.commune.collection
+entity.commune.import:
+  route_name: commune.import
+  title: 'Import Communes' 
+  appears_on:
+    - entity.commune.collection
