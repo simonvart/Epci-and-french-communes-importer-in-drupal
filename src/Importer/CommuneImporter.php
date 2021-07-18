@@ -166,7 +166,7 @@ class CommuneImporter extends ImporterBase implements ImporterInterface {
         BatchImporter::addToResultsByKey('error', $context);
         /** @var \Drupal\epci\Entity\Commune $entity */
         $entity = $this->storage->create($dataCommune);
-        $this->getLogger('epci')->error(sprintf('Commune insee: %s was created when it should have been updated', $dataCommune['insee']));
+        $this->getLogger('epci')->notice(sprintf('Commune insee: %s was created when it should have been updated', $dataCommune['insee']));
       }
       else {
         $entity = array_shift($entity);
@@ -181,7 +181,7 @@ class CommuneImporter extends ImporterBase implements ImporterInterface {
           BatchImporter::addToResultsByKey('error', $context);
           $epci = $this->epciStorage->create($dataEcpi);
           $epci->save();
-          $this->getLogger('epci')->error(sprintf('EPCI Siren: %s was created while it should have existed', $dataEcpi['siren']));
+          $this->getLogger('epci')->notice(sprintf('EPCI Siren: %s was created while it should have existed', $dataEcpi['siren']));
         }
         else {
           $epci = array_shift($epci);
