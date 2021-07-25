@@ -16,6 +16,8 @@ The importation is limited about one departement, 01 (Ain), which is hard-coded 
 
 Anyway, if you're french, and you need to import communes, or EPCI, or both, in your Drupal, this could be a head start.
 
+You could also import the french translation which are now inside the translations folder from the `admin/config/regional/translate/import` admin page.
+
 The module contains two files from which we import data:
 
 INSEE EPCI: https://www.insee.fr/fr/information/2115000
